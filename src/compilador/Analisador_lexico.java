@@ -9,6 +9,6 @@ package compilador;
  *
  * @author gabyc
  */
-public class Analisador_lexico {
+public class Analisador_lexico {   
     
 }
