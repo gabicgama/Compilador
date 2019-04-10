@@ -8,7 +8,7 @@ package compilador;
 /**
  *
  * @author gabyc
- * @author kiqnetto
+ *  @author kiqnetto
  */
 public class Main {
 
