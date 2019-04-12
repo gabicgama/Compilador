@@ -5,6 +5,8 @@
  */
 package compilador;
 
+import java.io.IOException;
+
 /**
  *
  * @author gabyc
@@ -15,9 +17,11 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Hello world");
-        // TODO code application logic here
+        
+        LerArquivos ler = new LerArquivos("nome.txt"); // Só exemplo, por enquanto.
+        
     }
     
 }
