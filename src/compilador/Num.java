@@ -8,16 +8,21 @@ package compilador;
 /**
  *
  * @author kvnet
+ * @author gabycgama
  */
-public class Token {
-    public final int tag;
-    
-    // Construtor da classe
-    public Token(int t){
-        tag = t;
+public class Num extends Token {
+
+    public final int value;
+
+    // Construtor
+    public Num(int v) {
+        super(Tag.INT_CONST);
+        value = v;
     }
     
     public String toString(){
-        return "" + (char)tag;
+        return "" + value; 
     }
+    
+    
 }

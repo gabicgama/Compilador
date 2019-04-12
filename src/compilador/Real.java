@@ -7,17 +7,18 @@ package compilador;
 
 /**
  *
- * @author kvnet
+ * @author Aluno
  */
-public class Token {
-    public final int tag;
-    
-    // Construtor da classe
-    public Token(int t){
-        tag = t;
+public class Real extends Token {
+    public final float value;
+
+    // Construtor
+    public Real(float v) {
+        super(Tag.FLOAT_CONT);
+        value = v;
     }
     
     public String toString(){
-        return "" + (char)tag;
+        return "" + value; 
     }
 }
