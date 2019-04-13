@@ -14,7 +14,7 @@ public class Real extends Token {
 
     // Construtor
     public Real(float v) {
-        super(Tag.FLOAT_CONT);
+        super(Tag.FLOAT_CONST);
         value = v;
     }
     

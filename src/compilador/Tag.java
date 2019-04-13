@@ -38,7 +38,7 @@ public class Tag {
             //Identificadores e literais
             IDF = 278,
             INT_CONST = 279,
-            FLOAT_CONT = 280,
+            FLOAT_CONST = 280,
             LIT = 281;
             
 }

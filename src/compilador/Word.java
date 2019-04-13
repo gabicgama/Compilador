@@ -34,6 +34,6 @@ public class Word extends Token{
         then = new Word ("then", Tag.THEN),
     
         // Identificadores
-        idf = new Word ("idf", Tag.IDF), int_const = new Word ("int_const", Tag.INT_CONST), float_const = new Word ("float_const", Tag.FLOAT_CONT), lit = new Word ("lit", Tag.LIT);
+        idf = new Word ("idf", Tag.IDF), int_const = new Word ("int_const", Tag.INT_CONST), float_const = new Word ("float_const", Tag.FLOAT_CONST), lit = new Word ("lit", Tag.LIT);
        
 }
