@@ -10,8 +10,7 @@ import lexer.Token;
 
 /**
  *
- * @author kvnet
- * @author gabyc
+ * @author Aluno
  */
 public class Real extends Token {
     public final float value;
