@@ -3,22 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package compilador;
+package lexer;
+
+import lexer.Tag;
+import lexer.Token;
 
 /**
  *
- * @author Aluno
+ * @author kvnet
+ * @author gabycgama
  */
-public class Real extends Token {
-    public final float value;
+public class Num extends Token {
+
+    public final int value;
 
     // Construtor
-    public Real(float v) {
-        super(Tag.FLOAT_CONST);
+    public Num(int v) {
+        super(Tag.INT_CONST);
         value = v;
     }
     
     public String toString(){
         return "" + value; 
     }
+    
+    
 }
