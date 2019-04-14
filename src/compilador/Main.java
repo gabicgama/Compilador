@@ -20,7 +20,12 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world");
         
-        LerArquivos ler = new LerArquivos("nome.txt"); // Só exemplo, por enquanto.
+//        LerArquivos ler = new LerArquivos("nome.txt"); // Só exemplo, por enquanto.
+
+        System.out.println(Character.isJavaIdentifierPart('_'));
+        System.out.println(Character.isValidCodePoint('a'));
+
+
         
     }
     
