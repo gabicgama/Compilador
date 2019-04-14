@@ -99,6 +99,7 @@ public class Lexer {
             return w;
         }
         //Reconhece literais do tipo "{as1344sda%$%$}"
+        //Tratar o caso de quebra de linha
         if(peek == '{'){
             StringBuffer b = new StringBuffer();
             do{
