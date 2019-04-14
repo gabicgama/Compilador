@@ -9,8 +9,8 @@ import java.io.IOException;
 
 /**
  *
+ * @author kvnet
  * @author gabyc
- *  @author kiqnetto
  */
 public class Main {
 

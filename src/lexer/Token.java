@@ -8,6 +8,7 @@ package lexer;
 /**
  *
  * @author kvnet
+ * @author gabyc
  */
 public class Token {
     public final int tag;

@@ -6,7 +6,8 @@
 package lexer;
 
 /**
- *
+ * * @author kvnet
+ * @author gabyc
  * @author gabyc
  */
 public class Tag {
@@ -16,7 +17,7 @@ public class Tag {
             APP = 256,
             START = 257,
             STOP = 258,
-            INTERGER = 259,
+            INTEGER = 259,
             REAL = 260,
             IF = 261,
             THEN = 262,

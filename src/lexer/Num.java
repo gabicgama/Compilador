@@ -11,7 +11,7 @@ import lexer.Token;
 /**
  *
  * @author kvnet
- * @author gabycgama
+ * @author gabyc
  */
 public class Num extends Token {
 
