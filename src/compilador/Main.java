@@ -22,8 +22,7 @@ public class Main {
         
 //        LerArquivos ler = new LerArquivos("nome.txt"); // Só exemplo, por enquanto.
 
-        System.out.println(Character.isJavaIdentifierPart('_'));
-        System.out.println(Character.isValidCodePoint('a'));
+
 
 
         

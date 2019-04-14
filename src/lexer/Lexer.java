@@ -84,15 +84,13 @@ public class Lexer {
             return new Real(x);
         }
         //Reconhecedor de identificadores 
-        
-        //OBS Modificar para reconhecer identificadores que começam com '_'
-        //Character.isUnicodeIdentifierPart(char) ou Character.isJavaIdentifierPart(char) identifica '_'
-        if(Character.isLetter(peek)){
+        //OBS Deve reconhecer idf que começam com '_'
+        if(Character.isLetter(peek) || peek == '_'){
             StringBuffer b = new StringBuffer();
             do{
                 b.append(peek);
                 readch();
-            }while(Character.isLetterOrDigit(peek));
+            }while(Character.isLetterOrDigit(peek) || peek == '_');
             String s = b.toString();
             Word w = (Word)words.get(s);
             if(w != null) return w;
@@ -100,10 +98,21 @@ public class Lexer {
             words.put(s, w);
             return w;
         }
-        
-        
-        //Implementar trecho de código que reconhece literais do tipo "{as1344sda%$%$}"
-        //Character.isValidCodePoint(char) reconhecer todos os caracteres
+        //Reconhece literais do tipo "{as1344sda%$%$}"
+        if(peek == '{'){
+            StringBuffer b = new StringBuffer();
+            do{
+                b.append(peek);
+                readch();
+            }while(peek != '}');
+            if(peek == '}'){b.append(peek);}
+            String s = b.toString();
+            Word w = (Word)words.get(s);
+            if(w != null) return w;
+            w =  new Word(s, Tag.LIT);
+            words.put(s, w);
+            return w;
+        }
         
         
         Token tok = new Token(peek);
