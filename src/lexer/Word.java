@@ -31,7 +31,7 @@ public class Word extends Token{
     
         // Palavras reservadas
         app = new Word ("app", Tag.APP), start = new Word ("start", Tag.START), stop = new Word ("stop", Tag.STOP),
-        integer = new Word ("integer", Tag.INTERGER), real = new Word ("real", Tag.REAL), end = new Word ("end", Tag.END),
+        integer = new Word ("integer", Tag.INTEGER), real = new Word ("real", Tag.REAL), end = new Word ("end", Tag.END),
         until = new Word ("until", Tag.UNTIL), read = new Word ("read", Tag.READ), write = new Word ("write", Tag.WRITE),
         then = new Word ("then", Tag.THEN),
     
