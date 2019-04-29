@@ -30,14 +30,14 @@ public class Main {
         } else if (n == 4) {
             arq = new File("Testes/teste4.txt");
         } else if (n == 5) {
-            arq = new File("teste5.txt");
+            arq = new File("Testes/teste5.txt");
         } else if (n == 6) {
-            arq = new File("teste6.txt");
+            arq = new File("Testes/teste6.txt");
         } else {
             System.out.println("Entrada inválida!");
         }
         
-        Lexer lexico = new Lexer(arq);
+        Lexer lexer= new Lexer(arq);
 
     }
 

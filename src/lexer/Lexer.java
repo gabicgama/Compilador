@@ -13,7 +13,7 @@ public class Lexer {
 
     private FileReader file;
     public static int line = 1;
-    char ch = ' ';//peek = proximo caracter
+    private char ch = ' ';//peek = proximo caracter
     Hashtable words = new Hashtable();
 
     void reserve(Word w) {
