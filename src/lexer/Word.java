@@ -1,7 +1,4 @@
-/*
- * Esta classe gerencia lexemas de palavras reservadas, identificadores e tokens especiais
- * Especificação destes tokens
- */
+
 package lexer;
 
 import lexer.Token;
