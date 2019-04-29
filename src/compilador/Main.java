@@ -38,7 +38,11 @@ public class Main {
         }
         
         Lexer lexer = new Lexer(arq);
-
+        Token token;
+        for (; ; ) {
+        token = lexer.scan();
+        }
+        
     }
 
 }
