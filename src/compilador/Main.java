@@ -37,7 +37,7 @@ public class Main {
             System.out.println("Entrada inválida!");
         }
         
-        Lexer lexer= new Lexer(arq);
+        Lexer lexer = new Lexer(arq);
 
     }
 
