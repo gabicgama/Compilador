@@ -12,11 +12,11 @@ import lexer.Token;
  *
  * @author Aluno
  */
-public class Real extends Token {
+public class NumFloat extends Token {
     public final float value;
 
     // Construtor
-    public Real(float v) {
+    public NumFloat(float v) {
         super(Tag.FLOAT_CONST);
         value = v;
     }

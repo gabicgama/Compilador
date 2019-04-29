@@ -164,7 +164,7 @@ public class Lexer {
                 x = x + Character.digit(ch, 10) / d;
                 d = d * 10;
             }
-            return new Real(x);
+            return new NumFloat(x);
         }
         //Reconhecedor de identificadores 
         //OBS Deve reconhecer idf que começam com '_'
@@ -186,23 +186,25 @@ public class Lexer {
             return w;
         }
         //Reconhece literais do tipo "{as1344sda%$%$}"
-        //Tratar o caso de quebra de linha
         if (ch == '{') {
             StringBuffer b = new StringBuffer();
             do {
                 b.append(ch);
                 readch();
             } while (ch != '}');
+            if(ch == '\n'){
+                System.out.println("Error na linha " + line + ".");
+            }         
             if (ch == '}') {
                 b.append(ch);
                 ch = ' ';
             }
             String s = b.toString();
-            Word w = (Word) words.get(s);
-            if (w != null) {
-                return w;
-            }
-            w = new Word(s, Tag.LIT);
+//            Word w = (Word) words.get(s);
+//            if (w != null) {
+//                return w;
+//            }
+            Word w = new Word(s, Tag.LIT);
             //acho que literal não entra na tabela de simbolos
             //words.put(s, w);
             return w;
