@@ -178,7 +178,7 @@ public class Lexer {
             w = new Word(s, Tag.IDF);
             words.put(s, w);
             //Exibindo símbolos inseridos na tabela de símbolos
-            System.out.println("=>Inserindo:" + "'" + w.toString() +"' na tabela." );
+            System.out.println("Inserindo:" + "'" + w.toString() +"' na tabela." );
             return w;
         }
         //Reconhece literais do tipo "{as1344sda%$%$}"
