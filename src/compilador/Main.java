@@ -47,7 +47,7 @@ public class Main {
             if (token.tag == 65535) {
                 break;//Gambiarra
             }
-            System.out.println("Token lido:\t" +token.getNomeToken()+"\tLexema:"+ token.toString()+"\tTag: "+token.tag);
+            System.out.println("Token lido:\t" +token.getNomeToken()+"\tLexema:"+ token.toString()+"\t\tTag: "+token.tag);
         }
 
     }

@@ -69,12 +69,12 @@ public class Token {
             return "WHILE";
         } else if (tag == Tag.WRITE) {
             return "WRITE";
-        } else if ((char) tag == '+' || (char) tag == '-' || (char) tag == '/') {
+        } else if ((char) tag == '+' || (char) tag == '-' || (char) tag == '/' || (char)tag == '*') {
             return toString();
-        } else if ((char) tag == ',' || (char) tag == ':' || (char) tag == ';') {
+        } else if ((char) tag == ',' || (char) tag == ':' || (char) tag == ';' || (char)tag == '.') {
             return toString();
         } else if ((char) tag == '>' || (char) tag == '<' || (char) tag == '=') {
-            return toString();
+            return "RELOP";
         } else if ((char) tag == '(' || (char) tag == ')') {
             return toString();
         } else {

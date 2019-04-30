@@ -1,4 +1,3 @@
-
 package lexer;
 
 import java.io.*;
@@ -64,12 +63,12 @@ public class Lexer {
 
     public Token scan() throws IOException {
         for (;; readch()) {
-            if (ch == ' ' || ch == '\t' || ch == '\r' || ch =='\b') {
+            if (ch == ' ' || ch == '\t' || ch == '\r' || ch == '\b') {
                 continue;
             } else if (ch == '\n') {
                 line++;
-            }else if (ch == '%'){ //comentários começam com % e terminam até \n
-                while(ch != '\n'){
+            } else if (ch == '%') { //comentários começam com % e terminam até \n
+                while (ch != '\n') {
                     readch();
                 }
                 continue;
@@ -123,22 +122,22 @@ public class Lexer {
                 return new Token('*');
             case '+':
                 ch = ' ';
-                return new Token('+');   
+                return new Token('+');
             case '-':
                 ch = ' ';
-                return new Token('-');   
+                return new Token('-');
             case '(':
                 ch = ' ';
-                return new Token('(');    
+                return new Token('(');
             case ')':
                 ch = ' ';
-                return new Token(')');   
+                return new Token(')');
             case ',':
                 ch = ' ';
-                return new Token(',');    
+                return new Token(',');
             case ';':
                 ch = ' ';
-                return new Token(';');    
+                return new Token(';');
         }
         //Reconhecedor de números inteiros ou decimais
         if (Character.isDigit(ch)) {
@@ -176,11 +175,11 @@ public class Lexer {
             if (w != null) {//verifica se w já está na tabela
                 return w;
             }
-            
+
             w = new Word(s, Tag.IDF);
             words.put(s, w);
             //Exibindo símbolos inseridos na tabela de símbolos
-            System.out.println("=>Inserindo:" + "'" + w.toString() +"' na tabela." );
+            System.out.println("=>Inserindo:" + "'" + w.toString() + "' na tabela.");
             return w;
         }
         //Reconhece literais do tipo "{as1344sda%$%$}"
@@ -189,10 +188,10 @@ public class Lexer {
             do {
                 b.append(ch);
                 readch();
-                if(ch == '\n'){
+                if (ch == '\n') {
                     System.out.println("Error na linha " + line + ".");
                     break;
-                }         
+                }
             } while (ch != '}');
             if (ch == '}') {
                 b.append(ch);
