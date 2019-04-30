@@ -1,4 +1,3 @@
-
 package compilador;
 
 import java.io.*;
@@ -36,13 +35,17 @@ public class Main {
         } else {
             System.out.println("Entrada inválida!");
         }
-        
+
         Lexer lexer = new Lexer(arq);
         Token token;
-        for (; ; ) {
-        token = lexer.scan();
+        for (;;) {
+            token = lexer.scan();
+            if(token.tag == 65535){//gambiarra
+                break;
+            }
+            System.out.println("Token lido: " + token);
         }
-        
+
     }
 
 }
