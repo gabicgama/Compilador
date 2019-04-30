@@ -1,0 +1,6 @@
+app teste8
+	read (a);
+	if a > 0 then
+		while a > 0 do
+			a := a - 1;
+	end
