@@ -78,7 +78,7 @@ public class Token {
         } else if ((char) tag == '(' || (char) tag == ')') {
             return toString();
         } else {
-            return "---";
+            return "(vazio)";
         }
 
     }

@@ -189,7 +189,7 @@ public class Lexer {
                 b.append(ch);
                 readch();
                 if (ch == '\n') {
-                    System.out.println("Error na linha " + line + ".");
+                    System.out.println("Error na linha " + line + "."+ "\n Esperando '}' no literal.");
                     break;
                 }
             } while (ch != '}');
