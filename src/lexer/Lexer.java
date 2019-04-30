@@ -171,10 +171,12 @@ public class Lexer {
                 readch();
             } while (Character.isLetterOrDigit(ch) || ch == '_');
             String s = b.toString();
+            s.toLowerCase();//converte toda a string pra minúsculo já que a gramatica não é case sensitive
             Word w = (Word) words.get(s);
             if (w != null) {//verifica se w já está na tabela
                 return w;
             }
+            
             w = new Word(s, Tag.IDF);
             words.put(s, w);
             //Exibindo símbolos inseridos na tabela de símbolos
@@ -187,10 +189,11 @@ public class Lexer {
             do {
                 b.append(ch);
                 readch();
+                if(ch == '\n'){
+                    System.out.println("Error na linha " + line + ".");
+                    break;
+                }         
             } while (ch != '}');
-            if(ch == '\n'){
-                System.out.println("Error na linha " + line + ".");
-            }         
             if (ch == '}') {
                 b.append(ch);
                 ch = ' ';
