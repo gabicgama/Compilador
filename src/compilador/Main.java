@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         File arq = new File("");
-        System.out.println("Escolha: Teste 1 | Teste 2 | Teste 3 | Teste 4 | Teste 5 | Teste 6 \n");
+        System.out.println("Escolha: Teste 1 | Teste 2 | Teste 3 | Teste 4 | Teste 5 | Teste 6 | Teste 7 | Teste 8 \n");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         if (n == 1) {
@@ -32,6 +32,10 @@ public class Main {
             arq = new File("Testes/teste5.txt");
         } else if (n == 6) {
             arq = new File("Testes/teste6.txt");
+        } else if (n == 7) {
+            arq = new File("Testes/teste7.txt");
+        } else if (n == 8) {
+            arq = new File("Testes/teste8.txt");
         } else {
             System.out.println("Entrada inválida!");
         }
