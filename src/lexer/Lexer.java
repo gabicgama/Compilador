@@ -35,11 +35,11 @@ public class Lexer {
         reserve(new Word("else", Tag.ELSE));
         reserve(new Word("do", Tag.DO));
         reserve(new Word("while", Tag.WHILE));
+        reserve(new Word("int", Tag.INT));
         //Demais palavras reservadas
         reserve(Word.app);
         reserve(Word.start);
         reserve(Word.stop);
-        reserve(Word.integer);
         reserve(Word.real);
         reserve(Word.then);
         reserve(Word.end);

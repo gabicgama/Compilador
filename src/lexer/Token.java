@@ -16,4 +16,10 @@ public class Token {
     public String toString(){
         return "" + (char)tag;
     }
+    
+    public String getToken(int tag){
+        String token="";
+        
+        return token;
+    }
 }

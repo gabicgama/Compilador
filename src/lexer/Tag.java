@@ -12,7 +12,7 @@ public class Tag {
             APP = 256,
             START = 257,
             STOP = 258,
-            INTEGER = 259,
+            INT = 259,
             REAL = 260,
             IF = 261,
             THEN = 262,
@@ -36,5 +36,4 @@ public class Tag {
             INT_CONST = 279,
             FLOAT_CONST = 280,
             LIT = 281;
-            
 }

@@ -43,7 +43,7 @@ public class Main {
             if (token.tag == 65535) {
                 break;//Gambiarra
             }
-            System.out.println("Token lido: " + token.toString());
+            System.out.println("Token lido:\t" + token.toString()+"\tTag: "+token.tag);
         }
 
     }
