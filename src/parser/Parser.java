@@ -1,5 +1,6 @@
 package parser;
 
+import inter.Stmt;
 import java.io.IOException;
 import lexer.Lexer;
 import lexer.Token;
@@ -29,4 +30,22 @@ public class Parser {
       if (look.tag == t) move();  
       else error("syntax error");
     }
+    
+//    public void program() throws Exception {
+//        Stmt s = block();
+//        int begin = s.newlabel();
+//        int after = s.newlabel();
+//        s.emitlabel(begin);
+//        s.gen(begin,after);
+//        s.emitlabel(after);
+//        
+//    }
+    
+//    Stmt block() throws IOException{
+//        match('{');
+//        Stmt s = stmts();
+//        
+//    }
+    
+   
 }
