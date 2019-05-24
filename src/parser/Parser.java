@@ -9,6 +9,11 @@ import lexer.Token;
  *
  * @author kvnet
  */
+
+/*
+** A classe Parser deve ter um procedimento p/ cada não terminal.
+** É necessário retirar a recursão a esquerda!!
+*/
 public class Parser {
     private Lexer lex; // Analisador lexico para este analisador sintático
     private Token look; // lookahead tagem
@@ -31,6 +36,7 @@ public class Parser {
       else error("syntax error");
     }
     
+    // A analise começa com a chamada de program()
 //    public void program() throws Exception {
 //        Stmt s = block();
 //        int begin = s.newlabel();
