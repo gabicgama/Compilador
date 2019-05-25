@@ -35,5 +35,7 @@ public class Tag {
             IDF = 278,
             INT_CONST = 279,
             FLOAT_CONST = 280,
-            LIT = 281;
+            LIT = 281,
+            
+            FLOAT = 282; // acrescentado
 }

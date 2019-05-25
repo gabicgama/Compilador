@@ -35,6 +35,7 @@ public class Lexer {
         reserve(new Word("do", Tag.DO));
         reserve(new Word("while", Tag.WHILE));
         reserve(new Word("int", Tag.INT));
+        reserve(new Word("float",Tag.FLOAT));//acrescentando float
         //Demais palavras reservadas
         reserve(Word.app);
         reserve(Word.start);
