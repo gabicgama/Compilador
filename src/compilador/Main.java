@@ -3,6 +3,7 @@ package compilador;
 import java.io.*;
 import java.util.*;
 import lexer.*;
+import parser.*;
 
 /**
  *
@@ -41,13 +42,15 @@ public class Main {
         }
 
         Lexer lexer = new Lexer(arq);
+        Parser parser = new Parser(lexer);
+        parser.programa();
         Token token;
         for (;;) {
             token = lexer.scan();
             if (token.tag == 65535) {
                 break;//Gambiarra
             }
-            System.out.println("Token lido:\t" +token.getNomeToken()+"\tLexema:"+ token.toString());
+            //System.out.println("Token lido:\t" +token.getNomeToken()+"\tLexema:"+ token.toString());
         }
 
     }
