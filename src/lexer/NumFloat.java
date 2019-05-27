@@ -13,7 +13,7 @@ public class NumFloat extends Token {
 
     // Construtor
     public NumFloat(float v) {
-        super(Tag.FLOAT_CONST);
+        super(Tag.FLOAT);
         value = v;
     }
     
