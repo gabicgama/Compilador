@@ -8,4 +8,5 @@ start
   f := a * a;
   b := b + a/2 * (3 + 5);
   write(f);
-  write(b);
+  write(b)
+stop

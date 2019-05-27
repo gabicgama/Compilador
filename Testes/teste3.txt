@@ -1,6 +1,6 @@
-App pessoa
-    int: cont;
-	real altura, soma;
+app pessoa
+    int cont;
+    real altura, soma
    start
       cont := 5;
 	  soma := 0;
@@ -9,7 +9,7 @@ App pessoa
 	  
 	    write({Altura: });
 		read (altura);
-		soma := soma # altura;
+		soma := soma + altura;
 		cont := cont - 1
 		
 	  until(cont=0);

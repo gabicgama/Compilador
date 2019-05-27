@@ -190,7 +190,7 @@ public class Lexer {
                 b.append(ch);
                 readch();
                 if (ch == '\n') {
-                    System.out.println("** Erro na linha " + line + ".");
+                    //System.out.println("** Erro na linha " + line + ".");
                     break;
                 }
             } while (ch != '}');
@@ -212,7 +212,7 @@ public class Lexer {
         if (ch != '+' && ch != '-' && ch != '=' && ch != '<' && ch != '>' && ch != '&' && ch != '|' && ch != '{' && ch != '}'
                 && ch != ')' && ch != ')' && ch != ',' && ch != '.' && ch != ';' && ch != ':' && ch != ' ' && ch != '\t' && ch != '\n' && ch != '\r' && ch != '\b'
                 && ch != '/' && ch != '*' && ch != 65535) {
-            System.out.println("** Erro na linha " + (line - 1) + ".");
+            //System.out.println("** Erro na linha " + (line - 1) + ".");
         }
 
         Token tok = new Token(this.ch);
