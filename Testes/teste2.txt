@@ -1,4 +1,4 @@
-app
+app teste2
   int a;
   int b;
   real f, _f

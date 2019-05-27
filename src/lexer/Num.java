@@ -15,7 +15,7 @@ public class Num extends Token {
 
     // Construtor
     public Num(int v) {
-        super(Tag.INT_CONST);
+        super(Tag.INT);
         value = v;
     }
     
