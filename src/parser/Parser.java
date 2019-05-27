@@ -31,7 +31,7 @@ public class Parser {
 
     private void eat(int tag) throws IOException {
         if (token.tag == tag) {
-            System.out.println("eat: " + token);
+            System.out.print("eat: " + token);
             next();
         } else {
             erro();
