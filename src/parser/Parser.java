@@ -436,7 +436,6 @@ public class Parser {
                 factor();
                 break;
             case '(':
-                eat('(');//eat 
                 factor();
                 break;
             case Tag.IDF:
