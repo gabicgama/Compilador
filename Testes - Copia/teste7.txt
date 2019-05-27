@@ -1,0 +1,9 @@
+app Teste
+	a := 3;
+	b := 6;
+
+	if b = 2 * a then
+		write (b é dobro de a)
+	else
+		write (b não é dobro de a)
+	end
